@@ -54,6 +54,7 @@ a:hover{
 }
 .logo{
     padding-left: 0.7rem ;
+    padding-right: 0.5rem;
     width: 80%;
     cursor: pointer;
 }
