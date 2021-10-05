@@ -13,7 +13,7 @@ a{
     color: rgb(47, 49, 47);
 }
 a:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }  
 /* !NAVBAR */
 
@@ -50,12 +50,9 @@ a:hover{
 }
 .logo-con{
   min-width: 250px;
-  width: 35%;
+  width: 45%;
 }
 .logo{
-    padding-left: 0.7rem ;
-    padding-right: 0.5rem;
-    margin-right: 1rem;
     width: 80%;
     cursor: pointer;
 }
@@ -103,7 +100,7 @@ a:hover{
   .menu-btn__burger {
     width: 50px;
     height: 6px;
-    background: rgb(47, 49, 47);
+    background: rgb(81, 85, 81);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(29, 27, 27, 0.2);
     transition: all .5s ease-in-out;
@@ -114,7 +111,7 @@ a:hover{
     position: absolute;
     width: 50px;
     height: 6px;
-    background: rgb(47, 49, 47);
+    background: rgb(81, 85, 81);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(29, 27, 27, 0.2);
     transition: all .5s ease-in-out;
