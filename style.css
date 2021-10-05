@@ -55,6 +55,7 @@ a:hover{
 .logo{
     padding-left: 0.7rem ;
     padding-right: 0.5rem;
+    margin-right: 1rem;
     width: 80%;
     cursor: pointer;
 }
