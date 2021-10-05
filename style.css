@@ -54,7 +54,7 @@ a:hover{
   width: 45%;
 }
 .logo{
-    width: 80%;
+    width: 100%;
     cursor: pointer;
 }
  
@@ -90,6 +90,7 @@ a:hover{
 /* ANIMATION */
 .menu-btn {
     position: absolute;
+    top: 4rem;
     right: 0rem; 
     width: 80px;
     height: 80px;
