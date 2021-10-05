@@ -51,7 +51,7 @@ a:hover{
 }
 .logo-con{
   min-width: 250px;
-  width: 45%;
+  width: 38%;
 }
 .logo{
     width: 100%;
@@ -79,6 +79,7 @@ a:hover{
     }
     .navbar-links.active {
         display: flex;
+
     }
     .menu-btn{
         display: flex !important;
@@ -93,9 +94,10 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    top: 4rem;
-    right: 0rem; 
+    top: 6rem;
+    right: 2rem; 
     height: 30px;
+    width: 30px;
     cursor: pointer;
     transition: all .5s ease-in-out;
     /* border: 3px solid #fff; */
@@ -104,8 +106,8 @@ a:hover{
   .menu-btn__burger__top,
   .menu-btn__burger__bottom,
   .menu-btn__burger {
-    width: 50px;
-    height: 6px;
+    width: 30px;
+    height: 4px;
     background: rgb(81, 85, 81);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(29, 27, 27, 0.2);
@@ -120,10 +122,10 @@ a:hover{
     box-shadow: none;
   }
   .menu-btn.open .menu-btn__burger__top {
-    transform: rotate(45deg) translate(15px, -15px);
+    transform: rotate(43deg) translateY(16.66px);
   }
   .menu-btn.open .menu-btn__burger__bottom {
-    transform: rotate(-45deg) translate(15px, 15px);
+    transform: rotate(-43deg) translateY(-16.66px);
   } 
 
 /** Slider*/
