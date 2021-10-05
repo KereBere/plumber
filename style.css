@@ -122,10 +122,10 @@ a:hover{
     box-shadow: none;
   }
   .menu-btn.open .menu-btn__burger__top {
-    transform: rotate(43deg) translateY(16.66px);
+    transform: rotate(45deg) translate(20px, -2px);
   }
   .menu-btn.open .menu-btn__burger__bottom {
-    transform: rotate(-43deg) translateY(-16.66px);
+    transform: rotate(-45deg) translate(20px, 2px);
   } 
 
 /** Slider*/
