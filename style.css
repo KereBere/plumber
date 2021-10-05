@@ -90,15 +90,19 @@ a:hover{
 /* ANIMATION */
 .menu-btn {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 4rem;
     right: 0rem; 
-    width: 80px;
-    height: 80px;
+    height: 30px;
     cursor: pointer;
     transition: all .5s ease-in-out;
     /* border: 3px solid #fff; */
     display: none;
   }
+  .menu-btn__burger__top,
+  .menu-btn__burger__bottom,
   .menu-btn__burger {
     width: 50px;
     height: 6px;
@@ -107,34 +111,19 @@ a:hover{
     box-shadow: 0 2px 5px rgba(29, 27, 27, 0.2);
     transition: all .5s ease-in-out;
   }
-  .menu-btn__burger::before,
-  .menu-btn__burger::after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 6px;
-    background: rgb(81, 85, 81);
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(29, 27, 27, 0.2);
-    transition: all .5s ease-in-out;
-  }
-  .menu-btn__burger::before {
-    transform: translateY(-16px);
-  }
-  .menu-btn__burger::after {
-    transform: translateY(16px);
-  }
+
+  
   /* ANIMATION */
   .menu-btn.open .menu-btn__burger {
     transform: translateX(-50px);
     background: transparent;
     box-shadow: none;
   }
-  .menu-btn.open .menu-btn__burger::before {
-    transform: rotate(45deg) translate(35px, -35px);
+  .menu-btn.open .menu-btn__burger__top {
+    transform: rotate(45deg) translate(15px, -15px);
   }
-  .menu-btn.open .menu-btn__burger::after {
-    transform: rotate(-45deg) translate(35px, 35px);
+  .menu-btn.open .menu-btn__burger__bottom {
+    transform: rotate(-45deg) translate(15px, 15px);
   } 
 
 /** Slider*/
