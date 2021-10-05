@@ -26,6 +26,5 @@ menuBtn.addEventListener('click', () => {
     autoplayTimeout: 3500,
     autoplayButtonOutput: false,
     nav: false
-    
   });
   
