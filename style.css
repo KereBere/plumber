@@ -54,6 +54,7 @@ a:hover{
   width: 38%;
 }
 .logo{
+    overflow: visible;
     width: 100%;
     cursor: pointer;
 }
