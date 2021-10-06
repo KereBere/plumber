@@ -28,3 +28,9 @@ menuBtn.addEventListener('click', () => {
     nav: false
   });
   
+  
+  
+  
+  
+  
+  alert(`W: ${screen.width} H: ${screen.height} DPI: ${devicePixelRatio}`); 
