@@ -1,5 +1,4 @@
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-const hamButton = document.getElementsByClassName('ham-con')[0];
 
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
@@ -7,10 +6,14 @@ menuBtn.addEventListener('click', () => {
   if(!menuOpen) {
     menuBtn.classList.add('open');
     navbarLinks.classList.toggle('active')
+    navbarLinks.classList.add('move-up')
+
+
     menuOpen = true;
   } else {
     menuBtn.classList.remove('open');
     navbarLinks.classList.toggle('active')
+    navbarLinks.classList.add('move-up')
     menuOpen = false;
   }
 });
