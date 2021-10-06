@@ -42,7 +42,6 @@ a{
     margin-right: 1rem;
 }
 .logo-con{
-  min-width: 230px;
   width: 38%;
   animation: fadeIn 500ms;
 }
