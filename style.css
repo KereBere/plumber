@@ -21,7 +21,6 @@ a:hover{
     max-width: 1000px;
     padding-top: 3rem;
     margin: auto;
-    margin-bottom: 3rem;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -53,43 +52,11 @@ a:hover{
 .logo-con{
   min-width: 200px;
   width: 38%;
+  animation: fadeIn 500ms;
 }
 .logo{
-    overflow: visible;
     width: 100%;
     cursor: pointer;
-    z-index: 1;
-}
- 
-@media (max-width: 800px) {
-    .navbar {
-        align-items: flex-start;
-        flex-direction: column;
-    } 
-    .navbar-links  {
-        display: none;
-        width: 100%;
-    }
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-    .navbar-links ul li {
-        text-align: center;
-    }
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-    .navbar-links.active {
-        display: flex;
-
-    }
-    .menu-btn{
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-    }
- 
 }
 /* ANIMATION */
 .menu-btn {
@@ -116,8 +83,6 @@ a:hover{
     box-shadow: 0 2px 5px rgba(29, 27, 27, 0.2);
     transition: all .5s ease-in-out;
   }
-
-  
   /* ANIMATION */
   .menu-btn.open .menu-btn__burger {
     transform: translateX(-50px);
@@ -130,6 +95,38 @@ a:hover{
   .menu-btn.open .menu-btn__burger__bottom {
     transform: rotate(-45deg) translate(20px, 2px);
   } 
+  
+ 
+@media (max-width: 800px) {
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+    .navbar-links  {
+        display: none;
+        width: 100%;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links ul li {
+        text-align: center;
+    }
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .menu-btn{
+        display: flex !important;
+    }
+    .logo-con{
+        min-width: 200px !important;
+    }
+}
 
 /** Slider*/
 
@@ -137,74 +134,17 @@ a:hover{
     max-width: 1000px;
     margin: auto;
 }
-
-/* .navbar{
-    margin-top: 3rem;
-    animation: fadeIn 500ms normal;
-}
-.nav-menu{
-    z-index: 1 !important;
+.slider-item{
+    height: 800px;
 }
 
-.navbar ul{
-    display: flex;
-    font-weight: 500;
-}
-
-.navbar a {
-    margin: clamp(0.2rem, 1rem, 1rem);
-    font-size: clamp(12px, 2vw, 1.1rem); 
-    font-weight: 500;
-    color: rgb(47, 49, 47);
-}
-.navbar .flex {
-    justify-content: space-between;
-}
-.burger{
-    display: none !important;
-    cursor: pointer;
-}
-
-.burger .line-1,
-.burger .line-2,
-.burger .line-3 {
-    width: 24px;
-    height: 3px;
-    background-color: rgb(123, 128, 123);
-}
-.burger .line-2{
-    margin: 3px 0;
-}
-z
-
-.nav-active{
-    transform: translateX(100%);
-    display: none !important;
-}
-
-*Slider 
  
 
-.banner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 20vw;
-    height: 20vw;
-    color: #FFA500;
-    background-colorback: rgba(47, 49, 47, 0.5);;
-    right: 0;
-    bottom: 50%;
-    font-size: 4vw; 
-    font-weight: bold;
-    line-height: 5rem;
-    border-radius: 25vh;
-}
 
-.logo-con > h3{
-    animation: fadeUp 800ms;
-}
+
+
+
+
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -220,4 +160,4 @@ z
       transform: translateY(0);
     }
   }
-   */
+   
