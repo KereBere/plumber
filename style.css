@@ -152,16 +152,17 @@ hr.solid {
 .services-grid{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
 }
 .service{
     margin: auto;
+    border-bottom: 1px solid gray;
+    padding: 1rem;
 }
 .service-img{
     width: 100%;
     border-radius: 10px;
-
 }
 
 
