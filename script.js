@@ -33,4 +33,4 @@ menuBtn.addEventListener('click', () => {
   
   
   
-  alert(`W: ${screen.width} H: ${screen.height} DPI: ${devicePixelRatio}`); 
+  //alert(`W: ${screen.width} H: ${screen.height} DPI: ${devicePixelRatio}`); 

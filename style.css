@@ -118,6 +118,10 @@ a:hover{
     .menu-btn{
         display: flex !important;
     } 
+    .logo-con{
+      width: 38%;
+      animation: fadeIn 500ms;
+    }
 }
 
 /** Slider*/
