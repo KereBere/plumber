@@ -3,8 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
+} 
 body{
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
@@ -19,7 +18,7 @@ a:hover{
 
 .navbar {
     max-width: 1000px;
-    padding-top: 3rem;
+    padding-top: 1rem;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -57,7 +56,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    top: 5rem;
+    top: 3rem;
     right: 2rem; 
     height: 30px;
     width: 30px;
@@ -123,19 +122,16 @@ a:hover{
       animation: fadeIn 500ms;
     }
 }
-
 /** Slider*/
-
 .slider{
     max-width: 1000px;
     margin: auto;
-}
-.slider-item{
-    height: 800px;
-}
+}   
+.slider-pic{
+   border-radius: 20px;
 
- 
-
+    width: 100%;
+}
 
 
 
