@@ -35,4 +35,4 @@ menuBtn.addEventListener('click', () => {
   
   
   
-  alert('hehe lolllll'); 
+  // alert('hehe lolllll');    
