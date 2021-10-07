@@ -47,7 +47,7 @@ a{
   animation: fadeIn 500ms;
 }
 .logo{
-    width: 100%;
+    width: 80%;
     cursor: pointer;
 }
 /* ANIMATION */
