@@ -215,13 +215,39 @@ a{
 }
 
 /**Footer*/
+.footer-con{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin-top: 9rem;
+    padding-top: 2rem;
+
+}
 .footer{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(45, 186, 241);
-    
 }
+.footer::before{
+    content: '';
+    height: 5rem;
+    width: 100%;
+    top: -0.5rem;
+    position: absolute;
+    background-color: rgb(45, 186, 241);
+    transform: skewY(-2deg); 
+    z-index: -4;
+}
+.address-con{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .address{
     margin-bottom: 1rem;
     color: white;
@@ -298,6 +324,9 @@ a{
         flex-direction: column;
         justify-content: start;
         height: 62%;
+    }
+    .address-con{
+        flex-direction: column;
     }
 }
 
