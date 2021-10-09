@@ -16,7 +16,7 @@ body{
 }
 
 a{
-    color: rgb(47, 49, 47);
+    color: #fff;
     display: block;
     text-decoration: none;
 }
@@ -146,7 +146,7 @@ a{
     width: 100%;
 }
 .div-line{
-    background-color: gray;
+    background-color:white;
     height: 1px;
     width: 65%;
     margin: auto;
@@ -189,6 +189,7 @@ a{
     max-width: 1000px;
     margin: auto;
     text-align: center;
+    color: white;
 }
 .services-banner{
     font-size: 1.5rem;
