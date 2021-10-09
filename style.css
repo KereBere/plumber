@@ -4,12 +4,17 @@
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 } 
+html{
+    overflow-x: hidden;
+}
 body{
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
     position: relative;
     height: 100vh;
+    overflow-x: hidden;
 }
+
 a{
     color: rgb(47, 49, 47);
     display: block;
