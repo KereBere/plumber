@@ -25,33 +25,7 @@ a{
 }  
 /* !NAVBAR */
 /** Whaptsapp Icon*/
-.contact-icons{
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    justify-content: center;
-}
-.whatsapp-float {
-	width:60px;
-	height:60px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-    font-size:30px;
-	box-shadow: 2px 2px 3px rgb(37, 34, 34);
-    margin: .2rem;
-}
-.whatsapp-float:hover{
-    transform: scale(1.1);
-}
-.phone_float{
-    background-color: blue;
-}
-.icon {
-	margin-top:16px;
-}
+
 /* for mobile */
 /* @media screen and (max-width: 767px){
     .whatsapp-icon {
@@ -244,21 +218,48 @@ a{
 .address-con{
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    padding-bottom: 4rem;
 }
 
 .address{
     margin-bottom: 1rem;
     color: white;
     text-align: center;
+    padding: 1rem;
 }
 .map-icon{
     display: inline-block;
     color: white;
     font-size: 2rem;
     animation: shake 4000ms infinite ease-in-out;
-}   
+}  
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.whatsapp-float {
+	width:60px;
+	height:60px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px rgb(37, 34, 34);
+    margin: .2rem;
+}
+.whatsapp-float:hover{
+    transform: scale(1.1);
+}
+.phone_float{
+    background-color: blue;
+}
+.icon {
+	margin-top:16px;
+} 
 @keyframes shake {
     0% { transform: rotate(0)}
     1% { transform: rotate(30deg)}
