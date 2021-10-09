@@ -221,7 +221,8 @@ a{
 .address-con{
     display: flex;
     width: 100%;
-    justify-content: center;
+    max-width: 1000px;
+    justify-content: space-around;
     align-items: center;
     padding-bottom: 4rem;
 }
