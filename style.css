@@ -38,6 +38,9 @@ a{
 	box-shadow: 2px 2px 3px rgb(37, 34, 34);
     margin: .2rem;
 }
+.whatsapp-float:hover{
+    transform: scale(1.1);
+}
 .phone_float{
     background-color: blue;
 }
@@ -57,14 +60,34 @@ a{
        font-size: 22px;
    }
 } */
+.skewed-topcon{
+    position: absolute;
+    height: 400px;
+    width: 100vw;
+    background-color: rgb(45, 186, 241);
+    z-index: -1;
+}
+.skewed-topcon::before,
+.skewed-topcon::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
 .navbar {
     max-width: 1000px;
     padding-top: 1rem;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;    
 }
 .navbar-links {
     height: 100%;
@@ -220,10 +243,39 @@ a{
 
 /**Footer*/
 .footer{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     margin: auto;
-    height: 20vh;
     background-color: rgb(49, 43, 43);
+    border-radius: 2rem;
 }
+.address{
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+}
+.map-icon{
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    animation: shake 4000ms infinite ease-in-out;
+}   
+@keyframes shake {
+    0% { transform: rotate(0)}
+    1% { transform: rotate(30deg)}
+    3% { transform: rotate(-30deg)}
+    5% { transform: rotate(30deg)}
+    7% { transform: rotate(-20deg)}
+    9% { transform: rotate(20deg)}
+    11% { transform: rotate(0)}
+    100% { transform: rotate(0)}
+}
+.map-icon:hover{
+    animation: shake 4000ms infinite ease-in-out;
+}
+
 
 @media (max-width: 500px) {
     .service-img{
