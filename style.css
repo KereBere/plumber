@@ -26,22 +26,7 @@ a{
 .nav-link:hover{
     transform: scale(1.1);
 }  
-/* !NAVBAR */
-/** Whaptsapp Icon*/
-
-/* for mobile */
-/* @media screen and (max-width: 767px){
-    .whatsapp-icon {
-    margin-top:10px;
-    }
-   .whatsapp_float {
-       width: 40px;
-       height: 40px;
-       bottom: 20px;
-       right: 10px;
-       font-size: 22px;
-   }
-} */
+/* !NAVBAR */ 
 .skewed-topcon{
     position: absolute;
     height: 70%;
@@ -103,7 +88,6 @@ a{
     width: 30px;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    /* border: 3px solid #fff; */
     display: none;
     animation: fadeIn 500ms;
 
@@ -263,7 +247,6 @@ a{
     display: inline-block;
     color: white;
     font-size: 2rem;
-    animation: shake 4000ms infinite ease-in-out;
 }  
 .contact-icons{
     display: flex;
@@ -286,18 +269,23 @@ a{
 }
 .phone_float{
     background-color: blue;
+    display: none;
 }
 .icon {
 	margin-top:16px;
 } 
+
+.animated-phone{
+    animation: shake 4000ms infinite ease-in-out;
+}
 @keyframes shake {
     0% { transform: rotate(0)}
-    1% { transform: rotate(30deg)}
-    3% { transform: rotate(-30deg)}
-    5% { transform: rotate(30deg)}
-    7% { transform: rotate(-20deg)}
-    9% { transform: rotate(20deg)}
-    11% { transform: rotate(0)}
+    3% { transform: rotate(30deg)}
+    7% { transform: rotate(-30deg)}
+    11% { transform: rotate(30deg)}
+    15% { transform: rotate(-20deg)}
+    19% { transform: rotate(20deg)}
+    23% { transform: rotate(0)}
     100% { transform: rotate(0)}
 }
 .map-icon:hover{
@@ -349,6 +337,12 @@ a{
         left: 50%;
         transform: translateX(-50%);
     }
+    .phone_float{
+        display: block;
+    }
+    .animated-phone{
+        display: none !important;
+    }
 }
  
 @media (max-width: 600px) {
@@ -386,4 +380,30 @@ a{
     100% {
         transform: scaleY(1)
     }
+}
+
+/**Services-About Us Page*/
+.skewed-topcon-services{
+    position: absolute;
+    height: 30%;
+    width: 100vw;
+    background-color: rgb(45, 186, 241);
+    z-index: -1;
+}
+.skewed-topcon-services::before,
+.skewed-topcon-services::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -60px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-1deg); 
+}
+.about-us{
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgb(45, 186, 241);
+    margin-top: 4rem;
 }
